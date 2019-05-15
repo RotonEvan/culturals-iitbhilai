@@ -1,0 +1,37 @@
+@import "navbarstyle.css";
+@import "carouselstyle.css";
+
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("../res/home-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  z-index: 2;
+}
+
+.slider-container {
+  z-index: 2;
+}
