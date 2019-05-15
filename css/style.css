@@ -106,3 +106,19 @@ html {
 .grow:hover {
   font-size: 110%;
 }
+
+.grow.active {
+  animation: font 1s infinite;
+}
+
+@keyframes font {
+  0% {
+    font-size: 100%
+  }
+  50% {
+    font-size: 110%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
