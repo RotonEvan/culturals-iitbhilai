@@ -25,6 +25,17 @@
       </div>
     </header>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load", function() {
+        $('.grow').toggleClass('active')
+        if ($('.grow').hasClass('active'))
+        window.setTimeout(function() {
+      $('.grow').toggleClass('active');
+  }, 1000);
+      })
+    </script>
 
   </body>
 </html>
