@@ -22,6 +22,38 @@ body {
 .heading {
     color: white;
 }
+/*menu*/
+.menu-toggle {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.menu-toggle a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.menu-toggle a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+/*Gallery*/
 .gallery {
     margin:5%;
 }
@@ -38,12 +70,19 @@ body {
     background-size: cover;
 }
 
-.main_club_heading {
+.main_club_headings {
     text-align: center;
-    padding: 1%;
-
+    padding-top: 15%;
+    padding-bottom: 20%;
     color: White !important;
 }
+.main_club_heading {
+    text-align: center;
+    font-size:340%;
+    color: White !important;
+}
+
+
 .cool_fact_name{
     color: white;
 }
@@ -271,9 +310,37 @@ body {
 }
 
 
-
-
 /*Youtube videos end*/
+
+
+<!--Gallery Style-->
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 057 css*/
+.jssorb057 .i {position:absolute;cursor:pointer;}
+.jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+.jssorb057 .i:hover .b {stroke-opacity:.7;}
+.jssorb057 .iav .b {stroke-opacity: 1;}
+.jssorb057 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 073 css*/
+.jssora073 {display:block;position:absolute;cursor:pointer;}
+.jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+.jssora073:hover {opacity:.8;}
+.jssora073.jssora073dn {opacity:.4;}
+.jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+
+
 .header {
     z-index: 2;
 }
@@ -281,3 +348,61 @@ body {
 .slider-container {
     z-index: 2;
 }
+
+/*Parallax*/
+/* Header Parallax Element Style*/
+.paral {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Paragraph for Parallax Section */
+.paral p {
+    font-size: 24px;
+    color: aquamarine;
+    opacity: 50%;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Heading for Parallax Section */
+.paral h1 {
+    color: aquamarine;
+    opacity: 30%;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+/* Image for Parallax Section */
+.paralsec {
+    background-image: url("../res/swara/black.jpg");
+}
+
+.paralsec1 {
+    background-image: url("../res/swara/background.jpg");}
+
+.paralsec2 {
+    background-image: url("../res/swara/blackncolor.jpg");
+}
+.paralsec3 {
+    background-image: url("../res/swara/background.jpg");}
+
+.paralsec4 {
+    background-image: url("../res/swara/blackncolor.jpg");
+}
+
+/* Add more images for more sections */
+
+
+/*!*Events*!*/
+/*element.style {*/
+/*}*/
+/*#schedule {*/
+/*    padding: 60px 0 60px 0;*/
+/*}*/
+/*.section-with-bg {*/
+/*    background-color: #f6f7fd;*/
+/*}*/
