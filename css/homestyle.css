@@ -1,5 +1,6 @@
 @import "navbarstyle.css";
-@import "skewboxstyle.css";
+@import "clubcard.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 a {
   text-decoration: none !important;
@@ -8,18 +9,22 @@ a {
 
 html {
   font-size: 16px;
+  scroll-behavior:smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-image: url("../res/home-bg-4.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* display: flex; */
+
 }
 
 .color-overlay {
@@ -38,7 +43,7 @@ body {
 }
 
 header {
-  z-index: 2;
+  z-index: 2 !important;
   margin-bottom: 3rem;
 }
 
@@ -49,15 +54,14 @@ header {
 .welcome-to-cult {
   margin-top: 3.2rem;
   position: relative;
-  transform: translateX(-50%);
   text-align: center;
   color: white;
-  z-index: 5 !important;
+  z-index: 1;
 }
 
 .welcome-to-cult .welcome {
-  font-family: 'Righteous', cursive;
-  font-size: 7rem;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 8rem;
 }
 
 .welcome-to-cult .iitbhilai {
@@ -66,16 +70,93 @@ header {
   color: #f4eb66;
 }
 
-.desc-cult {
+.welcome-to-cult .desc-cult {
   font-family: 'Stylish', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   text-align: center;
   position: relative;
-  max-width: 75ch;
-  margin:5rem auto;
-  transform: translateX(-50%);
+  max-width: 100ch;
+  margin:7rem auto;
 }
+
+.meet-clubs {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1 !important;
+}
+
+.meet-clubs .clubs-header {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 7rem;
+}
+
+.meet-clubs .clubs-desc {
+  font-family: 'Stylish', sans-serif;
+  font-size: 4rem;
+  color: #f4eb66;
+}
+
+.upcoming-event {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1 !important;
+}
+
+.upcoming-event .event-header {
+  position: relative;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 7rem;
+}
+
+.upcoming-event .event-desc {
+  font-family: 'Stylish', sans-serif;
+  font-size: 4rem;
+  color: #f4eb66;
+}
+
+.upcoming-event img {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  margin: 6rem auto;
+  overflow: hidden;
+  width: 96%;
+  height: 96%;
+}
+
+.upcoming-event p a {
+  margin-top: -3rem;
+  text-decoration: none;
+  font-family: 'Quicksand', serif;
+  font-size: 2rem;
+  color: #f4eb66 !important;
+
+If you want to restrict a responsive image to a maximum size, use the max-width property, with a pixel value of your choice:
+Example
+.responsive {
+
+}
+
+/* @media screen and (max-width: 960px) {
+  .container {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    display: block;
+  }
+} */
+
+
 
 @keyframes fadeInUp {
   from {
@@ -129,8 +210,30 @@ header {
     font-size: 2.7rem;
   }
 
-  .desc-cult {
-    font-size: 1.5rem;
-    max-width: 50ch;
+  .welcome-to-cult .desc-cult {
+    font-size: 1rem;
+    max-width: 42ch;
+  }
+
+  .meet-clubs .clubs-header {
+    font-size: 4.8rem;
+  }
+
+  .meet-clubs .clubs-desc {
+    font-size: 2.7rem;
+    color: #f4eb66;
+  }
+
+  .upcoming-event .event-header {
+    font-size: 4.8rem;
+  }
+
+  .upcoming-event .event-desc {
+    font-size: 2.7rem;
+    color: #f4eb66;
+  }
+
+  .upcoming-event img {
+    margin: 4rem auto;
   }
 }

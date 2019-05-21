@@ -1,18 +1,19 @@
 header {
   font-family: "Helvetica";
   position: relative;
-  margin: 10px auto;
+  margin: 0px auto;
   padding: 0px;
   color: #fff;
   box-sizing: border-box;
   border-radius: 4px;
+
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
 
 .cult-logo {
   color: #fff !important;
   font-family: "Permanent Marker", cursive;
-  height: 60px;
+  height: 56px;
   padding-top: 18px;
   font-size: 36px;
   line-height: 40px;
@@ -66,6 +67,13 @@ nav ul li a:hover {
   border-radius: 4px;
   box-shadow: 0px 0px 0px 2px #fff;
   transition: 0.5s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
 @media (max-width: 920px) {

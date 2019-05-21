@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-
+/*
 .skewbox {
   display: flex;
+  width: 100%;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
+*/
 
+.skewbox {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
 
 .container {
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
   position: relative;
-
-  width: 100%;
+  width: 90%;
   display: grid;
-
-  grid-template-columns:  repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-template-rows: auto;
   grid-gap: 40px 40px;
 }
@@ -51,15 +58,15 @@
 }
 
 .container .box:nth-child(2):before {
-  background: linear-gradient(315deg, #89ff00, #00bcd4)
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
 
 .container .box:nth-child(3):before {
-  background: linear-gradient(315deg, #e91e63, #5d02ff)
+  background: linear-gradient(315deg, #e91e63, #5d02ff);
 }
 
 .container .box:nth-child(4):before {
-  background: linear-gradient(315deg, #ff0000, #ffc107)
+  background: linear-gradient(315deg, #ff0000, #ffc107);
 }
 
 .container .box:nth-child(5):before {
@@ -67,7 +74,7 @@
 }
 
 .container .box:nth-child(6):before {
-  background: linear-gradient(315deg, #89ff00, #00bcd4)
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
 
 .container .box:after {
