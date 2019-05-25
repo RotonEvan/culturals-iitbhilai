@@ -1,5 +1,7 @@
 @import "navbarstyle.css";
 @import "clubcard.css";
+@import "council-card.css";
+@import "footerstyle.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 a {
@@ -138,11 +140,6 @@ header {
   font-family: 'Quicksand', serif;
   font-size: 2rem;
   color: #f4eb66 !important;
-
-If you want to restrict a responsive image to a maximum size, use the max-width property, with a pixel value of your choice:
-Example
-.responsive {
-
 }
 
 /* @media screen and (max-width: 960px) {
@@ -211,8 +208,12 @@ Example
   }
 
   .welcome-to-cult .desc-cult {
-    font-size: 1rem;
-    max-width: 42ch;
+    font-size: 2rem;
+    max-width: 50ch;
+  }
+
+  .meet-clubs {
+    margin-top: 37px;
   }
 
   .meet-clubs .clubs-header {
@@ -222,6 +223,10 @@ Example
   .meet-clubs .clubs-desc {
     font-size: 2.7rem;
     color: #f4eb66;
+  }
+
+  .upcoming-event {
+    margin-top: -100px;
   }
 
   .upcoming-event .event-header {

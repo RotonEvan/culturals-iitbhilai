@@ -51,6 +51,7 @@ nav ul li a {
   display: block;
   margin: 3px 4px;
   padding: 10px 20px;
+  transition: 0.5s;
 }
 
 nav ul li a.active {
@@ -74,6 +75,11 @@ nav ul li a:hover {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.75);
+}
+
+.hide {
+  visibility: hidden;
 }
 
 @media (max-width: 920px) {
